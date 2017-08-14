@@ -20,11 +20,11 @@ void let_me_help_you() {
 
 void get_flag1() {
     printf("Here comes flag1: \n");
-    char flag[20];
+    char flag[21];
     let_me_help_you();
     int fd = open("flag1.txt", O_RDONLY);
-    read(fd, flag, 20);
-    write(STDOUT, flag, 20);
+    read(fd, flag, 21);
+    write(STDOUT, flag, 21);
     close(fd);
 }
 
@@ -36,11 +36,11 @@ void get_flag2() {
     register int eax asm("eax");
     if (eax == 0x1337) {
         printf("Here comes flag2: \n");
-        char flag[20];
+        char flag[21];
         let_me_help_you();
         int fd = open("flag2.txt", O_RDONLY);
-        read(fd, flag, 20);
-        write(STDOUT, flag, 20);
+        read(fd, flag, 21);
+        write(STDOUT, flag, 21);
         close(fd);
     }
 }
