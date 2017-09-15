@@ -3,7 +3,7 @@ services:
   ssh:
     build: .
     ports:
-     - "2222:22"
+     - "2200:22"
     restart: always
     read_only: true
     cap_add:
